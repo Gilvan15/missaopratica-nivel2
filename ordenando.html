@@ -28,10 +28,7 @@
         </div>
     </div>
 </nav>    
-
-
-
-
+<h1>Ordenando Valores</h1>
     <div class="row g-3 align-items-center">
         <label for="valor" class="col-form-label">Valor</label>
         <div class="col-auto">
@@ -40,7 +37,6 @@
         </div>
     </div>
     <br />
-
     <div class="row g-3 align-items-center">
         <div class="col-auto mb-3">
             <select class="form-select" id="acao" name="acao">
@@ -53,17 +49,13 @@
             <button type="button" class="btn btn-primary" onclick="misturar();">Misturar</button>
         </div>
     </div>
-
     <ul id="valores"></ul>
-
     <script src="ordenando.js"></script>
     <script>
         let vector = [];
-
         function list_vector() {
             const ul = document.getElementById("valores");
             ul.innerHTML = "";
-
             vector.map(function (elem) {
                 let li = document.createElement("li");
                 li.appendChild(document.createTextNode(elem));
