@@ -65,7 +65,6 @@ const bubble_sort = (vector) => {
 };
 
 const selection_sort = (vector) => {
-    alert('Selection_sort');
     let n = vector.length;
 
     for (let i = 0; i < n; i++) {
@@ -80,6 +79,7 @@ const selection_sort = (vector) => {
         }
     }
     return vector;
+    alert('Selection_sort');
 };
 
 const quick_sort = (vector, left_pos, right_pos) => {
@@ -96,3 +96,4 @@ const quick_sort = (vector, left_pos, right_pos) => {
     return vector;
     alert('Quick_sort');
 }
+  
