@@ -77,6 +77,11 @@
         function add() {
             console.log("add");
             const valor = document.getElementById("valor");
+            
+            if(valor.value == ''){
+                return
+            }
+
             if (vector.includes(eval(valor.value)) == false) {
                 vector.push(eval(valor.value));
             };

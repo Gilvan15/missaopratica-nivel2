@@ -1,3 +1,4 @@
+//funcoes privadas
 const swap = (vetor, posicao1, posicao2) => {
     if (posicao1 < 0 || posicao1 >= vetor.length || posicao2 < 0 || posicao2 >= vetor.length) {
         console.error('Posições inválidas.');
@@ -9,6 +10,7 @@ const swap = (vetor, posicao1, posicao2) => {
     return vetor;
 }
 
+//funcoes privadas
 const partition = (vector, left_pos, right_pos) => {
     let pivot = vector[Math.floor((right_pos + left_pos) / 2)];
     let l = left_pos;
@@ -63,6 +65,7 @@ const bubble_sort = (vector) => {
     return vector;
     alert("Blubble Sort")
 };
+
 
 const selection_sort = (vector) => {
     let n = vector.length;
